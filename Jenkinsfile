@@ -1,4 +1,4 @@
-node {
+node ('172.31.90.129') {
     stage ('Stage SCM'){
         git 'https://github.com/kaleemullamohd/game-of-life.git'
     }
@@ -12,3 +12,4 @@ node {
         junit 'gameoflife-web/target/surefire-reports/*.xml'
     }
 }
+
